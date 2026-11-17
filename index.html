@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Perfume Combo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- The 3D Scene Wrapper -->
+    <div class="scene">
+        <!-- The Floating 3D Card -->
+        <div class="card" id="productCard">
+            
+            <div class="media-container">
+                <!-- Autoplaying background video -->
+                <video autoplay loop muted playsinline class="product-video">
+                    <source src="videos/promo.mp4" type="video/mp4">
+                </video>
+                <!-- Product image layered in 3D -->
+                <img src="images/perfume-combo.jpg" alt="Perfume Combo" class="product-image">
+            </div>
+
+            <div class="details">
+                <h2 class="title">Signature Glow 6-Pack</h2>
+                <p class="price">₹399 <span class="original">₹999</span></p>
+                
+                <form id="orderForm">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="tel" name="phone" placeholder="WhatsApp Number" required>
+                    <textarea name="address" placeholder="Full Delivery Address & Pincode" required></textarea>
+                    <button type="submit" class="buy-btn">Place COD Order</button>
+                </form>
+                <div id="statusMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
